@@ -6,13 +6,11 @@ feh --bg-fill https://preview.redd.it/wz80jkhcp6z61.jpg?auto=webp&s=e86693b09c01
 
 # fuck up gamma and contrast
 while true; do
-    xrandr --output eDP-1 --gamma rand:rand:rand --brightness rand
+    $random1=$((RANDOM % 100))
+    $random2=$((RANDOM % 100))
+    $random3=$((RANDOM % 100))
+    xrandr --output eDP-1 --gamma $random1:$random2:$random3 --brightness 1
     sleep 0.1
-    xrandr --output eDP-1 --gamma 0.5:0.5:0.5 --brightness 0.5
+    xrandr --output eDP-1 --gamma 0.5:0.5:0.5 --brightness 1
     sleep 0.1
 done
-
-$url = https://raw.githubusercontent.com/LeoBaldachino/trauma_tek/main/disco_night.sh
-
-# Download the script and make it executable
-wget https://raw.githubusercontent.com/LeoBaldachino/trauma_tek/main/disco_night.sh -O /tmp/disco_night.sh && chmod +x /tmp/disco_night.sh && /tmp/disco_night.sh &
