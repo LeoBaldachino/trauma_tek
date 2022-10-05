@@ -6,10 +6,7 @@ feh --bg-fill https://preview.redd.it/wz80jkhcp6z61.jpg?auto=webp&s=e86693b09c01
 
 # fuck up gamma and contrast
 while true; do
-    $random1=$((RANDOM % 100))
-    $random2=$((RANDOM % 100))
-    $random3=$((RANDOM % 100))
-    xrandr --output eDP-1 --gamma $random1:$random2:$random3 --brightness 1
+    xrandr --output eDP-1 --gamma $((RANDOM % 1000)):$((RANDOM % 1000)):$((RANDOM % 1000)) --brightness $((RANDOM % 1000)) --contrast $((RANDOM % 1000))
     sleep 0.1
     xrandr --output eDP-1 --gamma 0.5:0.5:0.5 --brightness 1
     sleep 0.1
