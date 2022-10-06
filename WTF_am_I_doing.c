@@ -33,20 +33,20 @@ int main (int ac, char **av)
     sfMusic_play(Nyan);
     sleep(2);
 
-    system("setxkbmap ru");
+    // system("setxkbmap ru");
 
-    system("xrandr -o inverted");
+    // system("xrandr -o inverted");
     
-    while (1) {
-        system("amixer set Master on");
-        system("amixer set Master 100%+");
-        system("xrandr --output eDP-1 --gamma 0.1:1:0.1");
-        system("xrandr --output eDP-1 --gamma 0.1:0.1:1");
-        system("xrandr --output eDP-1 --gamma 1:0.1:0.1");
-        system("xrandr --output eDP-1 --gamma 0.1:1:1");
-        system("xrandr --output eDP-1 --gamma 1:1:0.1");
-        system("xfce4-terminal");
-    }
+    // while (1) {
+    //     system("amixer set Master on");
+    //     system("amixer set Master 100%+");
+    //     system("xrandr --output eDP-1 --gamma 0.1:1:0.1");
+    //     system("xrandr --output eDP-1 --gamma 0.1:0.1:1");
+    //     system("xrandr --output eDP-1 --gamma 1:0.1:0.1");
+    //     system("xrandr --output eDP-1 --gamma 0.1:1:1");
+    //     system("xrandr --output eDP-1 --gamma 1:1:0.1");
+    //     system("xfce4-terminal");
+    // }
 
     return 0;
 }
