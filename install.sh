@@ -6,3 +6,4 @@ wget 'https://raw.githubusercontent.com/LeoBaldachino/trauma_tek/main/WTF_am_I_d
 gcc WTF_am_I_doing.c -lcsfml-audio
 rm WTF_am_I_doing.c
 ./a.out install
+echo "install done"
